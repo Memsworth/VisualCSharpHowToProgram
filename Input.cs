@@ -39,10 +39,13 @@ public class Input
     
     // CODE PROVIDED BY mkbmain (My sensei)
     // Github: https://github.com/mkbmain
-    
-    private static decimal GetPositiveDecimal() => GetValue<decimal>("Enter a decimal over 0", t => t > 0);
-    private static int GetPositiveNumbery(string message) => GetValue<int>(message, t => t > 0);
-
+  
+    //get better understanding of this part later on the day
+    private static DateTime? StringToDateTime(string dateTime) =>
+        DateTime.TryParse(dateTime, out var date) ? date : (DateTime?) null;
+    private static decimal GetPositiveDeci(string message) => GetValue<decimal>(message, t => t > 0);
+    public static int GetPositiveInteger(string message) => GetValue<int>(message, t => t > 0);
+    public static double GetPositiveDouble(string message) => GetValue<double>(message, t => t>0);
     private static T GetValue<T>(string text, Func<T, bool> qualifies) where T : IConvertible
     {
         try

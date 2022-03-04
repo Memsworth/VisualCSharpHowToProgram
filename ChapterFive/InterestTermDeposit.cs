@@ -9,7 +9,7 @@ public class InterestTermDeposit
     private readonly int _initialInvestment;
     private readonly DateOnly _initialInvestmentDate;
 
-    private double InterestRate
+    public double InterestRate
     {
         get => _interestRate;
         set
@@ -21,7 +21,7 @@ public class InterestTermDeposit
         }
     }
 
-    private int InitialInvestment
+    public int InitialInvestment
     {
         get => _initialInvestment;
         init
@@ -33,7 +33,7 @@ public class InterestTermDeposit
         }
     }
 
-    private DateOnly InitialInvestmentDateOnly
+    public DateOnly InitialInvestmentDateOnly
     {
         get => _initialInvestmentDate;
         init

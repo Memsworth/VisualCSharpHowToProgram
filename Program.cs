@@ -1,4 +1,5 @@
 ﻿using System;
+using VisualCSharpHowToProgram.ChapterFive;
 using VisualCsharpHowToProgram.ChapterFour;
 using VisualCSharpHowToProgram.ChapterFour;
 
@@ -8,7 +9,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            CoachingTest.RunTest();
+            InterestTermTest.RunTest();
             Console.ReadLine();
         }
     }
