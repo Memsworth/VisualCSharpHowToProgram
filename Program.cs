@@ -9,8 +9,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            InterestTermTest.RunTest();
-            Console.ReadLine();
+            InventoryLevelTest.RunTest();
         }
     }
 }
