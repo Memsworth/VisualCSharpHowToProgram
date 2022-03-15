@@ -1,7 +1,4 @@
-﻿using System;
-using VisualCSharpHowToProgram.ChapterFive;
-using VisualCsharpHowToProgram.ChapterFour;
-using VisualCSharpHowToProgram.ChapterFour;
+﻿using VisualCSharpHowToProgram.ChapterFive;
 
 namespace VisualCSharpHowToProgram
 {
@@ -9,7 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            InventoryLevelTest.RunTest();
+            SalesTest.RunTest();
         }
     }
 }

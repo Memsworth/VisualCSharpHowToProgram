@@ -5,7 +5,23 @@ public class Input
     // Change and add in what sensei posted with generics & funcs
     // Look in further into generics and how to impelement them correctly
     // Re-write this file so it doesn't follow DRY.
-   
+
+    public static int GetNumberInRange(string message, int start, int last)
+    {
+        int input = 0;
+        bool inputChecker = false;
+        while (true)
+        {
+            Console.Write($"{message}: ");
+            inputChecker = int.TryParse(Console.ReadLine(), out input);
+            if (inputChecker)
+            {
+                if(input <= last && input >= start) {break;}
+            }
+        }
+
+        return input;
+    }
     
     // TODO: Zombie CODE needs to be Deleted
     public static int GetPositiveNumber(string message)
@@ -18,6 +34,20 @@ public class Input
             inputChecker = int.TryParse(Console.ReadLine(), out input);
 
             if (inputChecker && input > 0){break;}
+        }
+
+        return input;
+    }
+    public static int GetNumber(string message)
+    {
+        int input = 0;
+        bool inputChecker = false;
+        while (true)
+        {
+            Console.Write($"{message}: ");
+            inputChecker = int.TryParse(Console.ReadLine(), out input);
+
+            if (inputChecker){break;}
         }
 
         return input;
