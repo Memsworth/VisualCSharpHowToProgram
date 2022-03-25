@@ -22,8 +22,9 @@ namespace VisualCSharpHowToProgram.ChapterFive
             {
                 for (int j = 0; j < recWidth; j++)
                 {
-
+                    Console.Write("*");
                 }
+                Console.WriteLine();
             }
         }
     }

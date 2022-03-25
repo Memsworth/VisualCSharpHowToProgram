@@ -6,7 +6,8 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            LargeNumber.RunTest();
+            BinaryToDecimal.RunTest();
+
         }
     }
 }
