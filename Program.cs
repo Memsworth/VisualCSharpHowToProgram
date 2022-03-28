@@ -6,7 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            BinaryToDecimal.RunTest();
+            Factorial.RunTest();
 
         }
     }
