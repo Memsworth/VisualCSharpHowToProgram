@@ -17,7 +17,7 @@ namespace VisualCSharpHowToProgram.ChapterFive
             Console.WriteLine($"{factorial}");
         }
 
-        private static int GetFactorial(int userInput)
+        protected static int GetFactorial(int userInput)
         {
             if (userInput == 0) { return 1; }
             else
