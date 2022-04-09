@@ -11,8 +11,4 @@
     <Compile Remove="ChapterFive\SalesCommission.cs" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ChapterSix\" />
-  </ItemGroup>
-
 </Project>

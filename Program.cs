@@ -1,4 +1,4 @@
-﻿using VisualCSharpHowToProgram.ChapterFive;
+﻿using VisualCSharpHowToProgram.ChapterSix;
 
 namespace VisualCSharpHowToProgram
 {
@@ -6,8 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            ConstantE.RunTest();
-
+            CalculatingSales.RunTest();
         }
     }
 }
