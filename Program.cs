@@ -1,4 +1,4 @@
-﻿using VisualCSharpHowToProgram.ChapterSix;
+﻿using VisualCSharpHowToProgram.ChapterSeven;
 
 namespace VisualCSharpHowToProgram
 {
@@ -6,7 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         static void Main(string[] args)
         {
-            CalculatingSales.RunTest();
+            SineCos.RunTest();
         }
     }
 }
