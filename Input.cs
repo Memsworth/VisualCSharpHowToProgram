@@ -76,6 +76,8 @@ public class Input
     private static decimal GetPositiveDeci(string message) => GetValue<decimal>(message, t => t > 0);
     public static int GetPositiveInteger(string message) => GetValue<int>(message, t => t > 0);
     public static double GetPositiveDouble(string message) => GetValue<double>(message, t => t>0);
+    //This might cause weird issues. Check later on for feedback
+    public static double GetDoubleNumber(string message) => GetValue<double>(message, t => t <= Double.MaxValue);
     private static T GetValue<T>(string text, Func<T, bool> qualifies) where T : IConvertible
     {
         try

@@ -10,15 +10,16 @@ namespace VisualCSharpHowToProgram.ChapterSeven
     {
         public static void RunTest()
         {
-            double numOne, numTwo, numThree = 0.0;
-            numOne = getInput();
-            numTwo = getInput();
-            numThree = getInput();
+            double numOne = GetInput();
+            double numTwo = GetInput();
+            double numThree = GetInput();
 
-
-
+            Console.WriteLine($"Min value between three value is: {Minimum3(numOne,numTwo, numThree)}");
         }
 
-        private static double getInput() => Input.GetNumber("Enter a number"); 
+        private static double GetInput() => Input.GetDoubleNumber("Enter a number");
+
+        private static double Minimum3(double valOne, double valTwo, double valThree) =>
+            Math.Min(valOne, Math.Min(valTwo, valThree));
     }
 }

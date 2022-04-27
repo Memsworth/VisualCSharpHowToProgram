@@ -1,12 +1,14 @@
-﻿using VisualCSharpHowToProgram.ChapterSeven;
+﻿using VisualCSharpHowToProgram.ChapterEight;
 
 namespace VisualCSharpHowToProgram
 {
-    public class Program
+    public static class Program
     {
-        static void Main(string[] args)
-        {
-            SineCos.RunTest();
-        }
+        private static void Main(string[] args) 
+        { 
+           WageRate.RunProgram();
+        } 
+        
+        
     }
 }
