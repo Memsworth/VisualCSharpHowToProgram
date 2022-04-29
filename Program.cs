@@ -6,7 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         private static void Main(string[] args) 
         { 
-           WageRate.RunProgram();
+            DiceRolling.RunProgram();
         } 
         
         
