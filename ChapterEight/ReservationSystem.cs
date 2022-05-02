@@ -1,6 +1,6 @@
 namespace VisualCSharpHowToProgram.ChapterEight;
 
-public class ReservationSystem
+public static class ReservationSystem
 {
     public static void RunProgram()
     {
@@ -23,11 +23,23 @@ public class ReservationSystem
                     Console.WriteLine("Just enter the correct input");
                     break;
             }
-            
-            
+
+            DisplaySeat(plane);
         }
         
         
+    }
+
+    private static void DisplaySeat(IReadOnlyList<bool> plane)
+    {
+        Console.WriteLine("=====================");
+        for (int i = 0; i < plane.Count; i++)
+        {
+            var result = plane[i]? "full" : "empty";
+            Console.WriteLine($"{i+1}: {result}");
+        }
+
+        Console.WriteLine("========================");
     }
 
     private static void ReserveEconomyClass(bool[] plane)
@@ -46,7 +58,19 @@ public class ReservationSystem
 
         else
         {
-            //reserve seat
+            ReserveSeat(plane, plane.Length / 2, plane.Length);
+        }
+    }
+
+    private static void ReserveSeat(IList<bool> plane, int areaStart, int areaFinish)
+    {
+        for (int i = areaStart; i < areaFinish; i++)
+        {
+            if (plane[i] == false)
+            {
+                plane[i] = true;
+                break;
+            }
         }
     }
 
@@ -62,6 +86,11 @@ public class ReservationSystem
             {
                 DisplayDeclineMessage();
             }
+        }
+
+        else
+        {
+            ReserveSeat(plane, 0, plane.Length/2);
         }
         
     }
@@ -97,9 +126,16 @@ public class ReservationSystem
         return response;
     }
 
-    private static bool AreaFull(bool[] plane, int planeLength, int length)
+    private static bool AreaFull(IReadOnlyList<bool> plane, int areaStart, int areaEnd)
     {
-        throw new NotImplementedException();
+        bool areaStatus = true;
+        for (int i = areaStart; i < areaEnd; i++)
+        {
+            if(plane[i]) continue;
+            areaStatus = false;
+        }
+
+        return areaStatus;
     }
 
 

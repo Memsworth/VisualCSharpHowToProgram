@@ -6,9 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         private static void Main(string[] args) 
         { 
-            DiceRolling.RunProgram();
-        } 
-        
-        
+            SalesReport.RunProgram();
+        }
     }
 }
