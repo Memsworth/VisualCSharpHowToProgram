@@ -1,4 +1,4 @@
-﻿using VisualCSharpHowToProgram.ChapterEight;
+﻿using VisualCSharpHowToProgram.ChapterNine;
 
 namespace VisualCSharpHowToProgram
 {
@@ -6,7 +6,7 @@ namespace VisualCSharpHowToProgram
     {
         private static void Main(string[] args)
         {
-            TortoiseHare.StartProgram();
+            PetName.StartProgram();
         }
     }
 }
