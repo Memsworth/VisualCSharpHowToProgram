@@ -2,6 +2,7 @@ namespace VisualCSharpHowToProgram.ChapterNine;
 
 public class NameConnector
 {
+    // Append ToArray to improve performance. Check Boxy's note again
     public static void StartProgram()
     {
         var names = new List<string>();

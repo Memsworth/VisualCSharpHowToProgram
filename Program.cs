@@ -1,4 +1,4 @@
-﻿using VisualCSharpHowToProgram.ChapterNine;
+﻿using VisualCSharpHowToProgram.ChapterTen;
 
 namespace VisualCSharpHowToProgram
 {
@@ -6,7 +6,8 @@ namespace VisualCSharpHowToProgram
     {
         private static void Main(string[] args)
         {
-            PetName.StartProgram();
+            var ballHemis = new Hemisphere(6.0f);
+            Console.WriteLine(ballHemis);
         }
     }
 }
