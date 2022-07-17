@@ -29,7 +29,7 @@ public class DepreciatingValue
 
     public static void ChangeRate(double rate)
     {
-        if (rate > 0.0)
+        if (rate is > 0.0 and < 100)
         {
             AnnualDepreciationRate = rate / 100;
         }

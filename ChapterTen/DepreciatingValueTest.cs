@@ -2,7 +2,7 @@ using System.Threading.Channels;
 
 namespace VisualCSharpHowToProgram.ChapterTen;
 
-public class DepreciatingValueTest
+public static class DepreciatingValueTest
 {
     public static void RunProgram()
     {
