@@ -6,7 +6,8 @@ namespace VisualCSharpHowToProgram
     {
         private static void Main(string[] args)
         {
-            IntegerSetTest.RunProgram();
+            
+            TicTacToe.RunProgram();
                 
         }
     }
